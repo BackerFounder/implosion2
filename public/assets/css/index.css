@@ -265,3 +265,12 @@ h1, h2, h3, h4 {
     opacity: 0;
   }
 }
+
+.popup {
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 20px 0 20px 0;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  bottom: -50px;
+}
