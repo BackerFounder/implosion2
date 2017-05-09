@@ -20,6 +20,29 @@ a {
 h1,h2,h3,h4 {
   margin: 0;
 }
+.bg {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  background-repeat: no-repeat;
+  background-image: url("/assets/img/main/bg.png");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.character {
+  position: relative;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  img {
+    height: 100%;
+  }
+}
 
 @media screen and (max-width:768px){
 
