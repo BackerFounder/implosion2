@@ -20,6 +20,8 @@ $(document).ready(function() {
 // FANCY BOX
 $(".btn").click(function(){
   $(".modal-bg").css("display","flex");
+  var src = $(".modal-content iframe").attr('src');
+    $(".modal-content iframe").attr('src', src);
 })
 // close
 $(".close").click(function(){

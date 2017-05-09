@@ -2,7 +2,7 @@ $main: #0d2565;
 @charset "UTF-8";
 @font-face {
   font-family: 'Alien';
-  src: url('/assets/font/ALIEN5_0.TTF');
+  src: url('assets/font/ALIEN5_0.TTF');
 }
 
 *:not(.fa) {
@@ -34,7 +34,7 @@ h1,h2,h3,h4 {
   width: 100%;
   background: #000;
   background-repeat: no-repeat;
-  background-image: url("/assets/img/main/bg.png");
+  background-image: url("../../assets/img/main/bg.png");
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -101,6 +101,7 @@ h1,h2,h3,h4 {
   img.word {
     position: absolute;
     top: 45%;
+    
   }
 
   img.btn {
@@ -129,14 +130,24 @@ h1,h2,h3,h4 {
     }
 }
 
-@keyframes btn_shadow {
+@keyframe word_ani {
     from {
-      box-shadow: 0 0 408px 70px #33ffff, inset 0 0 140px -20px #33ffff;
+      filter: blur(10px);
     }
 
     to {
-      box-shadow: 0 0 158px 20px #33ffff, inset 0 0 200px -20px #33ffff;
+      filter: blur(0px);
     }
+}
+
+@keyframes btn_shadow {
+  from {
+    box-shadow: 0 0 408px 70px #33ffff, inset 0 0 140px -20px #33ffff;
+  }
+
+  to {
+    box-shadow: 0 0 158px 20px #33ffff, inset 0 0 200px -20px #33ffff;
+  }
 }
 
 @keyframes character_blur {
@@ -192,8 +203,8 @@ h1,h2,h3,h4 {
 }
 
 .modal {
-  width: 800px;
-  height: 600px;
+  width: 1000px;
+  height: 500px;
   border: 1px solid #3becec;
   border-radius: 6px;
   margin: auto;
@@ -244,13 +255,13 @@ h1,h2,h3,h4 {
     60% {
       //height: 600px;
       height: 80px;
-      width: 800px;
+      width: 80%;
       opacity: 1;
     }
 
     100% {
-      height: 600px;
-      width: 800px;
+      height: 80%;
+      width: 80%;
     }
 }
 
