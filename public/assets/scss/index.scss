@@ -51,7 +51,20 @@ h1,h2,h3,h4 {
   img {
     height: 100%;
     overflow: hidden;
+    //flex: 1 1;
   }
+}
+
+.ks-logo {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.rayark-logo {
+  position: absolute;
+  bottom: 4%;
+  right: 5%;
 }
 
 .header {
@@ -66,12 +79,31 @@ h1,h2,h3,h4 {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  animation: header_color 1.8s 0.1s infinite alternate;
+  animation: header_color 2s 0s infinite alternate;
   overflow: hidden;
+  flex-wrap: wrap;
   
+  .entrance {
+    width: 100%;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
   img.logo {
     position: absolute;
     top: 5%;
+  }
+  img.word {
+    position: absolute;
+    top: 45%;
+  }
+  img.btn {
+    position: absolute;
+    top: 65%;
+    box-shadow: 0 0 228px 36px #33ffff, inset 0 0 120px 0px #33ffff;
+    animation: btn_shadow 1.5s 0.1s infinite alternate;
+    width: 18%;
+    cursor: pointer;
   }
   img {
     height: auto;
@@ -86,6 +118,15 @@ h1,h2,h3,h4 {
     }
     to {
       background: rgba(0,0,0,0.2);
+    }
+}
+
+@keyframes btn_shadow {
+    from {
+      box-shadow: 0 0 408px 70px #33ffff, inset 0 0 120px 0px #33ffff;
+    }
+    to {
+      box-shadow: 0 0 158px 20px #33ffff, inset 0 0 100px 0px #33ffff;
     }
 }
 
