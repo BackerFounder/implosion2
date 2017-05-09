@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'Alien';
+  src: url("/assets/font/ALIEN5_0.TTF");
+}
+
 *:not(.fa) {
-  font-family: xingothic-tc;
+  font-family: 'Alien';
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
@@ -10,6 +15,7 @@ html, body {
   line-height: 1.7;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 a {
@@ -41,8 +47,79 @@ h1, h2, h3, h4 {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
+  animation: character_blur 2s 0s infinite alternate;
+  overflow: hidden;
 }
 
 .character img {
   height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: #FFF;
+  font-family: Alien;
+  position: absolute;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  animation: header_color 1.8s 0.1s infinite alternate;
+  overflow: hidden;
+}
+
+.header img.logo {
+  position: absolute;
+  top: 5%;
+}
+
+.header img {
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+@keyframes header_color {
+  from {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes character_blur {
+  0% {
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  17% {
+    filter: blur(0px);
+  }
+  18% {
+    filter: blur(20px);
+  }
+  21% {
+    filter: blur(0px);
+    opacity: 1;
+    transform: skew(0deg);
+  }
+  21.5% {
+    opacity: 0.3;
+    filter: blur(5px);
+    transform: skew(45deg);
+  }
+  22% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: skew(0deg);
+  }
+  100% {
+    filter: blur(0px);
+  }
 }
