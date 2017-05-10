@@ -8,8 +8,8 @@ $(document).ready(function() {
     .css('top', 0 +'px')
 
   setTimeout(function(){
-  $(".loading-block").fadeOut(300)
-  },3200)
+  $(".loading-block-wrap").hide()
+  },3800)
 
 });
 
