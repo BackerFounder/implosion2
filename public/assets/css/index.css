@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Alien';
-  src: url("assets/font/ALIEN5_0.TTF");
+  src: url("../img/main/alien.ttf");
 }
 
 *:not(.fa) {
@@ -16,6 +16,7 @@ html, body {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  font-family: 'Alien';
 }
 
 a {
@@ -139,7 +140,7 @@ h1, h2, h3, h4 {
 
 .header img.word {
   margin: auto;
-  width: auto;
+  width: 70%;
   height: auto;
   margin: auto;
 }
