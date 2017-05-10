@@ -29,6 +29,31 @@ h1,h2,h3,h4 {
   margin: 0;
 }
 
+.loading-block {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+
+  .loading-bar {
+    height: 3px;
+    width: 100%;
+    position: relative;
+    //background: rgba(255, 255, 255, 0.2)
+  }
+
+  .loading-bar-inside {
+    background: #FFF;
+    height: 100%;
+    box-shadow: 0 0 45px 3px #3becec;
+    animation: loading 4s 0s 1 both ease-in;
+  }
+}
+
 .bg {
   height: 100%;
   width: 100%;
@@ -294,7 +319,7 @@ h1,h2,h3,h4 {
     }
 }
 
-@keyframe modal_disappear {
+@keyframes modal_disappear {
   from {
     opacity: 1;
   }
@@ -305,7 +330,15 @@ h1,h2,h3,h4 {
   }
 }
 
+@keyframes loading {
+  from {
+    width: 3%;
+  }
 
+  to {
+    width: 100%;
+  }
+}
 
 .popup {
   position: absolute;
@@ -321,6 +354,6 @@ h1,h2,h3,h4 {
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:952px){
 
 }

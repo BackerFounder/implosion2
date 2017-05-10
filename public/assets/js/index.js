@@ -1,22 +1,34 @@
+var video_record, first = 0;
+
 $(document).ready(function() {
   $(".character").fadeIn(1000)
   // init the character position
   $('.popup')
     .css('left', 0  +'px')
     .css('top', 0 +'px')
+  setTimeout(function(){
+  $(".loading-block").fadeOut(500)
+  },4000)
 });
 
 // btn click and modal show up
+// if video play for the first time
+// then record its src
 $(".btn").click(function(){
   $(".modal-bg").css("display","flex");
-  var src = $("#video").attr('src');
-    $(".modal-content iframe").attr('src', src);
+  if( first == 0){
+    video_record = $("#video").attr('src');
+    first = 1;
+  }
+  $(".modal-content iframe").attr('src', video_record);
 })
+
 // close modal and video stop
 $(".close").click(function(){
   $(".modal-bg").css("display","none");
   $('#video').attr('src', '');
 })
+
 // 3d move
 var moveForce = 30; // max popup movement in pixels
 var rotateForce = 20; // max popup rotation in deg
