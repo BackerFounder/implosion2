@@ -48,8 +48,9 @@ h1,h2,h3,h4 {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  animation: character_blur 2s 0s infinite alternate;
+  animation: character_blur 3s 2s infinite alternate;
   overflow: hidden;
+  display: none;
 
   img {
     height: 100%;
@@ -225,11 +226,11 @@ h1,h2,h3,h4 {
       transform: translateX(0px);
     }
 
-    17% {
+    19% {
       filter: blur(0px);
     }
 
-    18% {
+    20% {
       filter: blur(20px);
     }
 
@@ -304,16 +305,18 @@ h1,h2,h3,h4 {
   }
 }
 
+
+
 .popup {
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    bottom: -20px;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  bottom: -20px;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 

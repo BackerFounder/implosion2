@@ -47,8 +47,9 @@ h1, h2, h3, h4 {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  animation: character_blur 2s 0s infinite alternate;
+  animation: character_blur 3s 2s infinite alternate;
   overflow: hidden;
+  display: none;
 }
 
 .character img {
@@ -217,10 +218,10 @@ h1, h2, h3, h4 {
     opacity: 1;
     transform: translateX(0px);
   }
-  17% {
+  19% {
     filter: blur(0px);
   }
-  18% {
+  20% {
     filter: blur(20px);
   }
   21% {
