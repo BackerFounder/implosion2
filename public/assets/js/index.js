@@ -6,9 +6,11 @@ $(document).ready(function() {
   $('.popup')
     .css('left', 0  +'px')
     .css('top', 0 +'px')
+
   setTimeout(function(){
   $(".loading-block").fadeOut(300)
   },3200)
+
 });
 
 // btn click and modal show up
