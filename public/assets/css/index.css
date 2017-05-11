@@ -322,12 +322,32 @@ h1, h2, h3, h4 {
   }
   60% {
     height: 80px;
-    width: 90%;
+    width: 80%;
     opacity: 1;
   }
   100% {
     height: 80%;
+    width: 80%;
+  }
+}
+
+@keyframes modal_animation_phone {
+  0% {
+    height: 80px;
+    width: 160px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  60% {
+    height: 80px;
     width: 90%;
+    opacity: 1;
+  }
+  100% {
+    height: 40%;
+    width: 95%;
   }
 }
 
@@ -450,7 +470,7 @@ h1, h2, h3, h4 {
     margin-top: 20%;
   }
   .bg {
-    background-size: 280%;
+    background-size: 267%;
     background-position: top;
   }
   .header .entrance {
@@ -471,5 +491,12 @@ h1, h2, h3, h4 {
     display: block;
     width: 80%;
     margin: auto;
+  }
+  .modal {
+    width: 95%;
+    height: 50%;
+  }
+  .modal-animation {
+    animation: modal_animation_phone 1.2s 0.1s 1 both;
   }
 }
