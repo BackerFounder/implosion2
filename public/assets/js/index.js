@@ -22,6 +22,9 @@ $(".btn").click(function(){
     video_record = $("#video").attr('src');
     first = 1;
   }
+  setTimeout(function(){
+    $("#video").fadeIn(200)
+  },1300)
   $(".modal-content iframe").attr('src', video_record);
 })
 
@@ -29,6 +32,7 @@ $(".btn").click(function(){
 $(".close").click(function(){
   $(".modal-bg").css("display","none");
   $('#video').attr('src', '');
+  $("#video").css("display","none");
 })
 
 // 3d move
