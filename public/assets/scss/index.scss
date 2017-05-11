@@ -504,7 +504,7 @@ h1,h2,h3,h4 {
   }
 
   .bg {
-    background-size: 267%;
+    background-size: 256%;
     background-position: top;
   }
 
@@ -531,6 +531,10 @@ h1,h2,h3,h4 {
       display: block;
       width: 80%;
       margin: auto;
+    }
+
+    img.logo {
+      width: 80%;
     }
   }
 
